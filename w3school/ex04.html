@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocultar elemento</title>
+    <style>
+        div {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+            text-align: center;
+            color: #fff;
+            background-color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <div>1</div>
+    <div id="segundo">2</div>
+    <div>3</div>
+
+    <h1>Clique no botão abaixo para esconder o 2º quadro</h1>
+
+    <button type="button" onclick="document.getElementById('segundo').style.display='none'">Esconder</button>
+
+    <button type="button" onclick="document.getElementById('segundo').style.display='inline-block'">Mostrar 2º botão novamente</button>
+</body>
+</html>
