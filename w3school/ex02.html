@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lampada acesa e apagada</title>
+    <style>
+        .container {
+            width: 500px;
+            padding: 16px;
+        }
+
+        img {
+            max-width: 50%;
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+     <!-- botão para apagar -->
+     <button type="button" onclick="document.getElementById('lampada').src='imgs/2_lampada_apagada.png'">Apagar</button>
+
+     <img src="imgs/2_lampada_apagada.png" alt="Lampada apagada" id="lampada">
+ 
+     <!-- botão para acender -->
+     <button type="button" onclick="document.getElementById('lampada').src='imgs/1_lampada_acesa.png'">Acender</button>
+   </div>
+</body>
+</html>
