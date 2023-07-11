@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tratamento de dados </title>
+    <style>
+        body {
+            background-color: rgb(105, 105, 173);
+            color: white;
+            font: normal 20pt Arial;
+        }
+
+        h1 {
+            color: rgb(255, 212, 22);
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello World</h1>
+
+    <script>
+        /*
+            O comando prompt sempre retorna uma string, mesmo que você digite um numero
+            let soma = num1 + num2 neste concatena
+            let soma = (num1 + num2) neste tambem concatena
+            parseInt(n) convertendo para inteiro
+            parseFloat(n) convertendo para float decimal
+            Number(n) o javascript decide se é inteiro ou float
+            String(n) converte para string ou n.ToString()
+        */
+
+        let num1 = Number(prompt("Digite um numero: "))
+        let num2 = Number(prompt("Digite outro numero: ")) 
+        let soma = num1 + num2 
+        alert(`A soma entre ${num1} e ${num2} é igual a ${soma}`)
+    </script>
+</body>
+</html>
