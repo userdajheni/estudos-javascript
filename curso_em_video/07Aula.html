@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+    <style>
+        body {
+            background-color: rgb(68,125,199);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p name="IntroDom">Aprendendo a usar o <strong>DOM</strong> em javascript</p>
+    <div id="msg">clique em mim</div>
+
+    <!-- scripts -->
+    <!-- window. -->
+    <!-- location. -->
+    <!-- document. -->
+    <!-- history. -->
+
+    <script>
+        window.document.write("Olá Mundo <br>")
+        window.document.write(window.document.characterSet + "<br>")
+
+        /*
+            No javascript podemos selecionar elementos por
+            marca = getElementsByTagName()
+            nome = getElementsByName()
+            class = getElementsByClassName()
+            id = getElementById()
+            seletor = getElement
+        */
+
+        let p1 = document.getElementsByTagName("p")[0] // pegando o primeiro paragrafo
+        let p2 = document.getElementsByTagName("p")[1] // pegando o segundo paragrafo
+
+        document.write(`Está escrito assim: ${p1.innerText} <br>`)
+        document.write(`Está escrito assim: ${p2.innerHTML} <br>`)
+        p1.style.color="blue"
+        p1.style.fontSize='50px'
+
+        let mensagem = document.getElementById('msg')
+        mensagem.style.fontSize='100px'
+        mensagem.style.backgroundColor='yellow'
+
+        let paragrafo = document.getElementsByName('IntroDom')
+        paragrafo.style.color="red"
+    </script>
+</body>
+</html>
