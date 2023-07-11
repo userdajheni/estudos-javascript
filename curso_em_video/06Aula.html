@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Relacionais</title>
+    <style>
+        table,tr,td,th { padding: 20px; text-align: center;}
+    </style>
+</head>
+<body>
+    <h1>Operadores Relacionais</h1> 
+
+    <table>
+        <tr>
+            <th>Símbolo</th>
+            <th>Operação</th>
+            <th>Exemplo</th>
+            <th>Descrição</th>
+        </tr>
+        <tr>
+            <td><</td>
+            <td>Menor que</td>
+            <td>a < b</td>
+            <td>Verdadeira se a for menor que b.</td>
+        </tr>
+        <tr>
+            <td>></td>
+            <td>Maior que</td>
+            <td>a > b</td>
+            <td>Verdadeira se a for maior que b.</td>
+        </tr>
+        <tr>
+            <td>==</td>
+            <td>Igual a</td>
+            <td>a == b</td>
+            <td>Verdadeira se a for igual a b.</td>
+        </tr>
+        <tr>
+            <td>!=</td>
+            <td>Diferente de</td>
+            <td>a != b</td>
+            <td>Verdadeira se a for diferente de b.</td>
+        </tr>
+        <tr>
+            <td><=</td>
+            <td>Menor ou Igual a</td>
+            <td>a <= b</td>
+            <td>Verdadeiro se a for menor ou igual a b.</td>
+        </tr>
+        <tr>
+            <td>>=</td>
+            <td>Maior ou Igual a</td>
+            <td>a >= b</td>
+            <td>Verdadeiro se a for maior ou igual a b.</td>
+        </tr>
+        <tr>
+            <td>===</td>
+            <td>Identico a</td>
+            <td>a === b</td>
+            <td>Verdadeiro se o valor e o tipo de a for igual ao valor e tipo de b</td>
+        </tr>
+    </table>
+
+    <br><hr><br>
+
+    <h2>Operadores Lógicos</h2>
+    
+    <table>
+        <tr>
+            <th>Símbolo</th>
+            <th>Operação</th>
+            <th>Exemplo</th>
+            <th>Descrição</th>
+        </tr>
+        <tr>
+            <td>AND &&</td>
+            <td>E</td>
+            <td>Expr1 && expr2</td>
+            <td>Verdadeira se expr1 e expr2 forem verdadeiras.</td>
+        </tr>
+        <tr>
+            <td>OR ||</td>
+            <td>Ou</td>
+            <td>Expr1 ou expr2</td>
+            <td>Verdadeira se expr1 ou expr2 for verdadeira.</td>
+        </tr>
+        <tr>
+            <td>!</td>
+            <td>Negação</td>
+            <td>Expr1!</td>
+            <td>Uma coisa que não é verdadeiro é falso, e uma coisa que não é falso é verdadeiro</td>
+        </tr>
+    </table>
+
+    <script>
+        /*  operador ternario
+            teste ? true : false
+            media >= 7 ? "aprovado" : "reprovado"
+        */
+       let media = prompt("Dgite sua nota")
+       media >= 7 ? alert("Aprovado") : alert("Reprovado")
+    </script>
+</body>
+</html>
