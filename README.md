@@ -11,5 +11,5 @@ Guia dos cursos realizados:
 * [Javascript: Primeiros passos para desenvolvedor - Udemy](https://www.udemy.com/share/105XP83@AvY5frajSZIdPp1NxbNrKvemUJv5eI7fNYD_hVxy70HCSe8-OZLbyYKAEv7Hbyi4/)
 
 
-## Exercícios onlines (pratique você também)
+## Exercícios online (pratique você também)
 * [Edabit](https://edabit.com/user/XFbZK5WavF5sezB6R)
