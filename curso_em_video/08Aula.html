@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos com o DOM</title>
+    <style>
+        body {
+            margin: 100px;
+            text-align: center;
+            background-color: cornflowerblue;
+        }
+
+        h1 { color: yellow; }
+
+        div#area {
+            width: 200px;
+            height: 200px;
+            color: white;
+            font-size: 20px;
+            line-height: 200px;
+            background-color: violet;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        DOM = Document Object Model da acesso aos elementos para o javascript. 
+        Por isso usamos a arvore DOM. Cada página possui sua própria arvore DOM.
+
+        5 Técnicas para acessar elementos dentro do javascript por meio do DOM:
+        - TagsName
+        - ID
+        - Name
+        - ClassName
+        - QuerySelector
+     -->
+
+     <h1>Eventos com o DOM</h1>
+     <div id="area" 
+        onclick="mudarBackground()"
+        onmouseenter="entrar()"
+        onmouseout="sair()"
+     >
+        Interaja...
+     </div>
+
+     <!-- 
+        Eventos é tudo aquilo que pode acontecer com qualquer elemento html. Os mais comuns são eventos de mouse:
+        - mouse enter: ao colocar o mouse dentro da div
+        - mouse move: ao mexer o mouse dentro da div 
+        - mouse down: ao clicar e segurar o click
+        - mouse up: ao clicar e soltar o click 
+        - click: dar um click rapidamente
+        - mouse out: tirar o mouse da div
+
+        Função é um conjunto de códigos que vão ser executadas somente quando o evento ocorrer.
+      -->
+
+      <script>
+        function mudarBackground(){
+            document.getElementById('area').style.background='orange'
+            document.getElementById('area').innerHTML = "Clicou!"
+        }
+
+        function entrar(){
+            document.getElementById('area').innerHTML = "Entrou!"
+            document.getElementById('area').style.background = 'violet'
+        }
+
+        function sair(){
+            document.getElementById('area').innerHTML = "Saiu"
+            document.getElementById('area').style.background = 'coral'
+        }
+      </script>
+</body>
+</html>
