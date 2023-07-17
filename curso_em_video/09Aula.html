@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos com o DOM</title>
+    <style>
+        body {
+            margin: 100px;
+            text-align: center;
+            background-color: cornflowerblue;
+        }
+
+        h1 { color: yellow; }
+
+        div#eventos {
+            width: 200px;
+            height: 200px;
+            color: white;
+            font-size: 20px;
+            line-height: 200px;
+            background-color: violet;
+        }
+    </style>
+</head>
+<body>
+    <div id="eventos">
+        Vamos interagir?
+    </div>
+
+    <script>
+        let eventos = document.getElementById('eventos')
+        eventos.addEventListener('click', clicar)
+        eventos.addEventListener('mouseenter', entrar)
+        eventos.addEventListener('mouseout', sair)
+
+        function clicar() {
+            eventos.innerText = "Clicou!"
+            eventos.style.background = 'red'
+        }
+
+        function entrar() {
+            eventos.innerText = 'Entrou'
+        }
+
+        function sair() {
+            eventos.innerText = 'Saiu!'
+            eventos.style.background = 'violet'
+        }
+    </script>
+</body>
+</html>
