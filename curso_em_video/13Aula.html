@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicoes com switch</title>
+</head>
+<body>
+    <h1 id="diaSem"></h1>
+    <script>
+        let agora = new Date()
+        let diaSem = agora.getDay()
+
+        switch (diaSem){
+            case 0:
+                document.getElementById('diaSem').innerHTML = 'Hoje é Domingo'
+                break
+
+            case 1:
+                document.getElementById('diaSem').innerHTML = 'Hoje é Segunda'
+                break
+
+            case 2: 
+                document.getElementById('diaSem').innerHTML = 'Hoje é Terça'
+                break
+
+            case 3: 
+                document.getElementById('diaSem').innerHTML = 'Hoje é Quarta'
+                break
+
+            case 4: 
+                document.getElementById('diaSem').innerHTML = 'Hoje é Quinta'
+                break
+
+            case 5:
+                document.getElementById('diaSem').innerHTML = 'Hoje é Sexta'
+                break
+
+            case 6:
+                document.getElementById('diaSem').innerHTML = 'Hoje é Sabado'
+                break
+        }
+    </script>
+</body>
+</html>
