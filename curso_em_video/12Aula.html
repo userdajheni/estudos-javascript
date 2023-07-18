@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições part. 2</title>
+</head>
+<body>
+    <h1 id="res"></h1>
+    <h2 id="res2"></h2>
+    <h2 id="minutos"></h2>
+    <h2 id="segundos"></h2>
+    <h2 id="ano"></h2>
+    <h2 id="mes"></h2>
+    <h2 id="dia"></h2>
+    <h2 id="diaSemana"></h2>
+    
+    <script>
+        let agora = new Date()
+        let hora = agora.getHours()
+        let minutos = agora.getMinutes()
+        let res =  document.getElementById('res')
+        let res2 = document.getElementById('res2')
+        let ano = agora.getFullYear()
+        let mes = agora.getMonth()
+        let dia = agora.getDate()
+        let diaSemana = agora.getDay()
+        let segundos = agora.getSeconds()
+
+        res2.innerHTML = `Agora são exatamente ${hora} horas.`
+
+        if(hora < 12) {
+            res.innerHTML = 'Bom Dia'
+        } else if (hora <= 18) {
+            res.innerHTML = 'Boa tarde'
+        } else {
+            res.innerHTML = 'Boa noite'
+        }
+
+        document.getElementById('ano').innerHTML = `Estamos no ano de: ${ano}`
+        document.getElementById('minutos').innerHTML = `E ${minutos} minutos.`
+        document.getElementById('segundos').innerHTML = `E ${segundos} segundos`
+        
+        document.getElementById('mes').innerHTML = `Estamos no ${mes} mês`
+        document.getElementById('dia').innerHTML = `Hoje é dia: ${dia}`
+        document.getElementById('diaSemana').innerHTML = `Hoje é dia: ${diaSemana} na semana.`
+        
+    </script>
+</body>
+</html>
