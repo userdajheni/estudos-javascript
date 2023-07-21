@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores básicos, matemática</title>
+</head>
+<body>
+    <h1>Operadores básicos, matemática: 5 e 7</h1>
+    <ul>
+        <li>Soma: <span id="somar"></span></li>
+        <li>Subtração: <span id="sub"></span></li>
+        <li>Multiplicação: <span id="mult"></span></li>
+        <li>Divisão: <span id="div"></span></li>
+        <li>Módulo: <span id="mod"></span></li>
+        <li>Potência: <span id="pot"></span></li>
+    </ul>
+    <script>
+        let a = 5
+        let b = 7
+
+        document.getElementById('somar').innerHTML=`${a+b}`
+        document.getElementById('sub').innerHTML=`${a-b}`
+        document.getElementById('mult').innerHTML=`${a*b}`
+        document.getElementById('div').innerHTML=`${a/b}`
+        document.getElementById('mod').innerHTML=`${a%b}`
+        document.getElementById('mod').innerHTML=`${a%b}`
+        document.getElementById('pot').innerHTML=`${a**b}`
+    </script>
+</body>
+</html>

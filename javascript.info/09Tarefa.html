@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparações</title>
+</head>
+<body>
+    <h1>Faça comparações com a string '7' e o número 2</h1>
+
+    <ul>
+        <li>'7' é maior que 2? <span id="res1"></span></li>
+        <li>'7' é menor que 2? <span id="res2"></span></li>
+        <li>'7' é igual a 2? <span id="res3"></span></li>
+        <li>'7' é identico ao 2? <span id="res4"></span></li>
+        <li>'7' é diferente de 2? <span id="res5"></span></li>
+    </ul>
+
+    <script>
+        let a = '7'
+        let b = 2
+
+        document.getElementById('res1').innerHTML = `${a>b}`
+        document.getElementById('res2').innerHTML = `${a<b}`
+        document.getElementById('res3').innerHTML = `${a==b}`
+        document.getElementById('res4').innerHTML = `${a===b}`
+        document.getElementById('res5').innerHTML = `${a!=b}`
+    </script>
+
+    <h1>Faça comparações com a string '2' e o número 2</h1>
+    <ul>
+        <li>'2' é maior que 2? <span id="res6"></span></li>
+        <li>'2' é menor que 2? <span id="res7"></span></li>
+        <li>'2' é igual a 2? <span id="res8"></span></li>
+        <li>'2' é identico ao 2? <span id="res9"></span></li>
+        <li>'2' é diferente de 2? <span id="res10"></span></li>
+    </ul>
+    <script>
+        let c = '2'
+        let d = 2
+
+        document.getElementById('res7').innerHTML = `${a>b}`
+        document.getElementById('res8').innerHTML = `${a<b}`
+        document.getElementById('res9').innerHTML = `${a==b}`
+        document.getElementById('res10').innerHTML = `${a===b}`
+        document.getElementById('res11').innerHTML = `${a!=b}`
+    </script>
+</body>
+</html>

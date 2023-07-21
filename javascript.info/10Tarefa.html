@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramificação condicional: se, '?'</title>
+</head>
+<body>
+    <h1>Ramificação condicional: se, '?'</h1>
+    <script>
+        let ano = 2024
+
+        if (ano == 2023){
+            return 'Ano atual'
+        } else {
+            return 'Ano novo!!'
+        }
+
+        let age = prompt('age?')
+        let message = (age < 3) ? 'Hi, baby' :
+            (age < 18) ? 'Hello' :
+            (age < 100) ? 'Greetings!' :
+            'What an unusual age!';
+
+        alert(message)
+    </script>
+</body>
+</html>
