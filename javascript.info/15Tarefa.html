@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+    <style>
+        #div {
+            background-color: cadetblue;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <H1>Funções</H1>
+
+    <script>
+        function showMensagem() {
+            alert('hello everyne!')
+        }
+
+        function mudarCor() {
+            let div = document.getElementById('div')
+            div.style.background = 'purple'
+        }
+    </script>
+
+    <button onclick="showMensagem()">Clique me!</button>
+
+    <div id="div" onclick="mudarCor()">
+        clique no quadrado para mudar a cor!
+    </div>
+</body>
+</html>
