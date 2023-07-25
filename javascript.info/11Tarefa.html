@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores lógicos</title>
+</head>
+<body>
+    <h1>Operadores lógicos</h1>
+
+    <script>
+        alert(null || 2 || undefined) // saída: 2
+
+        alert( alert(1) || 2 || alert(3)) // saída: 1 e depois 2
+
+        alert(1 && null && 2) // saída: null
+
+        alert( alert(1) && alert(2) ) // saída: 1 e depois undefined
+
+        alert( null || 2 && 3 || 4 ) // saída: 3
+    </script>
+</body>
+</html>
