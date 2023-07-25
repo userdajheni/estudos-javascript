@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operador de coalescência nulo '?'</title>
+</head>
+<body>
+    <h1>Operador de coalescência nulo '?'</h1>
+
+    <script>
+        let user;
+        alert(user ?? "Anonymous") // saída: Anonymous
+
+        user = 'john'
+        alert(user ?? "Anonymous") // saída: john 
+
+        let firstName = null
+        let lastName = null
+        let nickName = "Supercoder"
+        console.log(firstName ?? lastName ?? nickName ?? "Anonymous") // saída: Supercoder
+        console.log(firstName || lastName || nickName || "Anonymous") // saída: Supercoder
+
+        let height = 0;
+        cons(height || 100); // 100
+        alert(height ?? 100); // 0
+    </script>
+</body>
+</html>
