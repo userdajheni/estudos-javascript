@@ -11,5 +11,7 @@ Guia dos cursos realizados:
 * [Javascript: Primeiros passos para desenvolvedor - Udemy](https://www.udemy.com/share/105XP83@AvY5frajSZIdPp1NxbNrKvemUJv5eI7fNYD_hVxy70HCSe8-OZLbyYKAEv7Hbyi4/)
 
 
-## Exercícios online (pratique você também)
-* [Edabit](https://edabit.com/user/XFbZK5WavF5sezB6R)
+## Meus projetos
+* [Hora do Dia](https://userdajheni.github.io/curso-javascript/curso_em_video/ex01/index.html)
+* [Verificador de Idade](https://userdajheni.github.io/curso-javascript/curso_em_video/ex02/index.html)
+* [Contador: constante e regressivo](https://userdajheni.github.io/curso-javascript/curso_em_video/ex03/index.html)
