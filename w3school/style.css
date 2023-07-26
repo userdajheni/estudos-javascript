@@ -1,0 +1,15 @@
+section {
+    text-align: center;
+    display: flex;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: beige;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
