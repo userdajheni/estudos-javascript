@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENTOS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> <!--onload="msg()"-->
+    <h1>EVENTOS HTML</h1>
+    <h2>Quando a página carregar 100% um pop-up aparecerá na tela. (usamos onload)</h2>
+
+    <select name="seletor" id="seletor" onchange="mudar()">
+        <option value="01">Opção 1</option>
+        <option value="02">Opção 2</option>
+    </select>
+
+    <section>
+        <div class="box" onclick="mudarCor()" id="mudarCor"> clique para mudar a cor</div>
+        <div class="box" onmouseover="mudarBackground()" id="mudarBackground"> passe o mouse sobre para mudar a cor</div>
+        <div class="box" onmouseout="trocarCor()" id="trocarCor"> passe o mouse e depois tire para mudar a cor</div>
+        <div class="box" onkeydown="alterarCor()" id="alterarCor">Pressione alguma tecla para mudar a cor de fundo!</div>
+    </section>
+
+    <!-- scripts -->
+    <script>
+        function msg() {
+            alert('A página carregou 100%!')
+        }
+
+        function mudar() {
+            alert('Você alterou a opção')
+        }
+
+        function mudarCor() {
+            document.getElementById('mudarCor').style.background='orange'
+        }
+
+        function mudarBackground() {
+            document.querySelector('div#mudarBackground').style.background='red'
+        }
+
+        function trocarCor() {
+            document.getElementById('trocarCor').style.background='#49a078'
+        }
+
+        function alterarCor() {
+            document.querySelector('div#alterarCor').style.background='#216869'
+        }
+    </script>
+</body>
+</html>
