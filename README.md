@@ -16,3 +16,4 @@ Guia dos cursos realizados:
 * [Verificador de Idade](https://userdajheni.github.io/curso-javascript/curso_em_video/ex02/index.html)
 * [Contador: constante e regressivo](https://userdajheni.github.io/curso-javascript/curso_em_video/ex03/index.html)
 * [Tabuada](https://userdajheni.github.io/curso-javascript/curso_em_video/ex04/index.html)
+* [Analisador de números](https://userdajheni.github.io/curso-javascript/curso_em_video/ex05/index.html)
