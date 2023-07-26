@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+</head>
+<body>
+    <h1>Funções</h1>
+
+    <script>
+        // numero par é divisivel por 2
+        function ePar(num) {
+            if(num % 2 == 0) {
+                console.log('Este numero é par')
+            } else {
+                console.log('Este numero é impar.')
+            }
+        }
+
+        ePar(746)
+
+        function somar(n1=0, n2=0){ // se não passar os parametros o js vai entender que valem 0 (zero)
+            return n1 + n2
+        }
+
+        console.log(somar(5,8))
+
+        // 5! = 5 * 4 * 3 * 2 * 1
+        function fatorial(n) {
+            if(n == 1) {
+                return 1
+            } else {
+                return n * fatorial(n-1)
+            }
+        }
+
+        function calcularFatorial(x){
+            let res = 1
+            for(let indice = 1; indice <= x; indice++) {
+                res = res * indice
+            }
+
+            return res
+        }
+
+        console.log(calcularFatorial(5))
+    </script>
+</body>
+</html>
