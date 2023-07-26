@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisador de Números</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Analisador de Números</h1>
+    </header>
+
+        <section>
+            <div>
+                <label for="numero"><strong>Número:</strong></label>
+                <input type="number" id="numero" name="numero">
+                <button type="submit" onclick="adicionar()">Adicionar na lista</button>
+            </div>
+
+            <div>
+                <select name="lista" id="lista" size="10"></select> <br><br>
+                <button type="submit" onclick="calcular()">Calcular</button>
+            </div>
+
+            <div id="resultado">
+                esperando os numeros para calcular. 
+            </div>
+        </section>
+
+        <footer>
+            &copy; CursoEmVideo
+        </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

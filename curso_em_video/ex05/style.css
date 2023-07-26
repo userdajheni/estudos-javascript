@@ -1,0 +1,38 @@
+body {
+    color: #000;
+    background-color: rgb(70, 142, 236);
+    font: normal 15pt Arial;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+footer {
+    color: white;
+    margin: 100px 0;
+    text-align: center;
+    font-style: italic;
+}
+
+div {
+    padding: 10px;
+    text-align: center;
+}
+
+section {
+    width: 500px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: white;
+    margin: auto; /* centraliza */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.363);
+}
+
+select {  
+    padding: 10px;
+    width: 200px;
+    overflow:hidden;
+    text-align: center; 
+}
