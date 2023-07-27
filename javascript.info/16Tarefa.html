@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>expressões de função</title>
+</head>
+<body>
+    <h1>expressões de função</h1>
+
+    <div onclick="sayHi()">Clique para acionar a função declarada</div>
+    <div onclick="sayHello()">Clique para acionar a espressão de função</div>
+
+
+    <script>
+        function sayHi() {
+            alert("Hello")
+        }
+
+        let sayHello = function() {
+            alert("Hello World")
+        }
+
+        let digaOi = () => alert("Oi!");
+        digaOi();
+
+        let idade = prompt("Qual a sua idade?")
+
+        let bemVindo = (idade < 18) ? () => alert('Menor que 18') : () => alert('Maior que 18')
+        bemVindo()
+
+        let soma = (a,b) => a+b
+        console.log(soma(5,2))
+
+        let nomeSobrenome = (x,y) => x+y
+        console.log(nomeSobrenome('Ana ', 'Silva'))
+    </script>
+</body>
+</html>
